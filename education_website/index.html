@@ -1,0 +1,429 @@
+<!---we will also talk about the hosting uisng netlify -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Education website</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <!--for icon we have to use this link ,we have use iconscout-->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+    <!--to use the google font we have to paste the link here from googlefont.com-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!--for slider (use in testimonials section)we will use swiperjs.com-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <style>
+      body{
+        background-image: url("./images/bg-texture.png");
+      }
+    </style>
+  </head>
+  <body>
+    <!--start of navigation bar -->
+    <nav>
+      <div class="container nav_container">
+        <a href="index.html" id="edu_name"><h4>EDUCATION</h4></a>
+        <ul class="nav_menu">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="courses.html">COURSES</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+        <!--this is the button for opening the menus-HOMME,CONTACT ETC in th mobile as it will be responsive-->
+        <button id="open-menu-btns"><i class="uil uil-bars"></i></button>
+        <!--this is the close button -->
+        <button id="close-menu-btns"><i class="uil uil-multiply"></i></button>
+      </div>
+    </nav>
+    <!--end of navigation -->
+    <!--start of header section-->
+    <header>
+      <div class="container header_container">
+        <div class="header_left">
+          <h1>Grow your skills to advance your career path</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+            architecto minus totam aliquam aspernatur vitae sit reprehenderit
+            qui illum cum!
+          </p>
+          <a href="courses.html" class="btn btn-primary">GET STARTED</a>
+        </div>
+        <div class="header_right">
+          <div class="header_right-image">
+            <img src="./images/header.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--end of header section-->
+
+    <!----section area of categories-->
+    <section class="categories">
+      <div class="container categories_container">
+        <div class="categories_left">
+          <h1>Categories</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+            maxime magnam, assumenda vitae quas, fugiat dignissimos beatae,
+            cupiditate tempore saepe ea autem veniam ducimus labore sit odit
+            explicabo qui facilis temporibus voluptatum est vel? Recusandae.
+          </p>
+          <button class="btn">Learn more</button>
+        </div>
+        <div class="categories_right">
+          <!--blockchain-->
+          <article class="category">
+            <span class="category-icon" id="s1"
+              ><i class="uil uil-bitcoin-circle"></i>
+            </span>
+            <h5>Blockchain</h5>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit</p>
+          </article>
+          <!--Graphic design-->
+          <article class="category">
+            <span class="category-icon" id="s2"
+              ><i class="uil uil-clapper-board"></i>
+            </span>
+            <h5>Graphic design</h5>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit</p>
+          </article>
+          <!--Finance-->
+          <article class="category">
+            <span class="category-icon" id="s3"
+              ><i class="uil uil-dollar-alt"></i>
+            </span>
+            <h5>Finance</h5>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit</p>
+          </article>
+          <!--Marketing-->
+          <article class="category">
+            <span class="category-icon" id="s4"
+              ><i class="uil uil-newspaper"></i
+            ></span>
+            <h5>Marketing</h5>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit</p>
+          </article>
+          <!---Music-->
+          <article class="category">
+            <span class="category-icon" id="s5"
+              ><i class="uil uil-music"></i
+            ></span>
+            <h5>Music</h5>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit</p>
+          </article>
+          <!--business-->
+          <article class="category">
+            <span class="category-icon" id="s6"
+              ><i class="uil uil-rupee-sign"></i>
+            </span>
+            <h5>Business</h5>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!--end of categories section -->
+
+    <!--courses section -->
+    <section class="courses">
+      <h2>Our Popular courses</h2>
+      <div class="container courses_container">
+        <article class="course">
+          <div class="course_image">
+            <img src="./images/course1.jpg " />
+          </div>
+          <div class="course_info">
+            <h4>Responsive Social Media Website Ui Design</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus
+              laboriosam blanditiis inventore a voluptatum, quidem nemo.
+            </p>
+            <a href="courses.html" class="btn btn-primary">Learn More</a>
+          </div>
+        </article>
+
+        <article class="course">
+          <div class="course_image">
+            <img src="./images/course2.jpg " />
+          </div>
+          <div class="course_info">
+            <h4>Responsive SmartPhone Website design</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus
+              laboriosam blanditiis inventore a voluptatum, quidem nemo.
+            </p>
+            <a href="courses.html" class="btn btn-primary">Learn More</a>
+          </div>
+        </article>
+
+        <article class="course">
+          <div class="course_image">
+            <img src="./images/course3.jpg " />
+          </div>
+          <div class="course_info">
+            <h4>Responsive Admin Dashboard UI Design</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus
+              laboriosam blanditiis inventore a voluptatum, quidem nemo.
+            </p>
+            <a href="courses.html" class="btn btn-primary">Learn More</a>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!--end of courses section -->
+
+    <!-----------------------------frequently asked question section-->
+    <section class="faqs">
+      <h2>Frequently Asked Questions</h2>
+      <div class="container faqs_container">
+        <article class="faq">
+          <div class="faq_icon"><i class="uil uil-plus"></i></div>
+          <div class="ques_ans">
+            <h4>How do we know about the right courses for me?</h4>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Explicabo, repellendus. Voluptatem, tempore nisi iure consequatur
+              sed similique quas enim magni ipsum! Laudantium officiis qui eos
+              iste rem optio ut pariatur.
+            </p>
+          </div>
+        </article>
+
+        <article class="faq">
+          <div class="faq_icon"><i class="uil uil-plus"></i></div>
+          <div class="ques_ans">
+            <h4>How do we know about the right courses for me?</h4>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Explicabo, repellendus. Voluptatem, tempore nisi iure consequatur
+              sed similique quas enim magni ipsum! Laudantium officiis qui eos
+              iste rem optio ut pariatur.
+            </p>
+          </div>
+        </article>
+
+        <article class="faq">
+          <div class="faq_icon"><i class="uil uil-plus"></i></div>
+          <div class="ques_ans">
+            <h4>How do we know about the right courses for me?</h4>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Explicabo, repellendus. Voluptatem, tempore nisi iure consequatur
+              sed similique quas enim magni ipsum! Laudantium officiis qui eos
+              iste rem optio ut pariatur.
+            </p>
+          </div>
+        </article>
+
+        <article class="faq">
+          <div class="faq_icon"><i class="uil uil-plus"></i></div>
+          <div class="ques_ans">
+            <h4>How do we know about the right courses for me?</h4>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Explicabo, repellendus. Voluptatem, tempore nisi iure consequatur
+              sed similique quas enim magni ipsum! Laudantium officiis qui eos
+              iste rem optio ut pariatur.
+            </p>
+          </div>
+        </article>
+
+        <article class="faq">
+          <div class="faq_icon"><i class="uil uil-plus"></i></div>
+          <div class="ques_ans">
+            <h4>How do we know about the right courses for me?</h4>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Explicabo, repellendus. Voluptatem, tempore nisi iure consequatur
+              sed similique quas enim magni ipsum! Laudantium officiis qui eos
+              iste rem optio ut pariatur.
+            </p>
+          </div>
+        </article>
+
+        <article class="faq">
+          <div class="faq_icon"><i class="uil uil-plus"></i></div>
+          <div class="ques_ans">
+            <h4>How do we know about the right courses for me?</h4>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Explicabo, repellendus. Voluptatem, tempore nisi iure consequatur
+              sed similique quas enim magni ipsum! Laudantium officiis qui eos
+              iste rem optio ut pariatur.
+            </p>
+          </div>
+        </article>
+
+        <article class="faq">
+          <div class="faq_icon"><i class="uil uil-plus"></i></div>
+          <div class="ques_ans">
+            <h4>How do we know about the right courses for me?</h4>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Explicabo, repellendus. Voluptatem, tempore nisi iure consequatur
+              sed similique quas enim magni ipsum! Laudantium officiis qui eos
+              iste rem optio ut pariatur.
+            </p>
+          </div>
+        </article>
+
+        <article class="faq">
+          <div class="faq_icon"><i class="uil uil-plus"></i></div>
+          <div class="ques_ans">
+            <h4>How do we know about the right courses for me?</h4>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Explicabo, repellendus. Voluptatem, tempore nisi iure consequatur
+              sed similique quas enim magni ipsum! Laudantium officiis qui eos
+              iste rem optio ut pariatur.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!----end of Frequenlty asked questions-->
+
+    <!--start of testimonials-->
+    <section class="container testimonials_container mySwiper">
+      <h2>Students testimonials</h2>
+      <div class="swiper-wrapper">
+        <article class="testimonial swiper-slide">
+          <div class="avatar">
+            <img src="./images/avatar1.jpg" />
+          </div>
+          <div class="testimonial_info">
+            <h5>Simran</h5>
+            <small>Student</small>
+          </div>
+          <div class="testimonial_body">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+              cumque esse voluptatum laborum ex possimus nihil minima
+              consequatur iste nesciunt ipsa, dolorum itaque, impedit labore
+              illo illum adipisci, ad vero!
+            </p>
+          </div>
+        </article>
+
+        <article class="testimonial swiper-slide">
+          <div class="avatar">
+            <img src="./images/avatar2.jpg" />
+          </div>
+          <div class="testimonial_info">
+            <h5>Simran</h5>
+            <small>Student</small>
+          </div>
+          <div class="testimonial_body">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+              cumque esse voluptatum laborum ex possimus nihil minima
+              consequatur iste nesciunt ipsa, dolorum itaque, impedit labore
+              illo illum adipisci, ad vero!
+            </p>
+          </div>
+        </article>
+
+        <article class="testimonial swiper-slide">
+          <div class="avatar">
+            <img src="./images/avatar3.jpg" />
+          </div>
+          <div class="testimonial_info">
+            <h5>Simran</h5>
+            <small>Student</small>
+          </div>
+          <div class="testimonial_body">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+              cumque esse voluptatum laborum ex possimus nihil minima
+              consequatur iste nesciunt ipsa, dolorum itaque, impedit labore
+              illo illum adipisci, ad vero!
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!--end of testimnoials-->
+
+    <!--footer section-->
+    <footer>
+      <div class="footer footer_container">
+        <div class="footer_1">
+          <a href="index.html" class="footer_logo"><h4>SIMRAN</h4></a>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+            cum ea exercitationem maiores est dolorum recusandae voluptas vero
+            ad porro!
+          </p>
+        </div>
+        <div class="footer_2">
+          <h4>Permalinks</h4>
+          <ul class="permalinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer_3">
+          <h4>Privacy</h4>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms and Conditions</a></li>
+          <li><a href="#">Refund Policy</a></li>
+        </div>
+        <div class="footer_4">
+          <h4>Contact Us</h4>
+          <div>
+            <p>+91 7991366280</p>
+            <p>simranspn2021@gmail.com</p>
+          </div>
+          <div>
+            <ul class="footer_socials">
+              <li>
+                <a href="#"><i class="uil uil-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="uil uil-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="uil uil-linkedin"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="uil uil-twitter"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer_copyright">
+        <small>Copyright &copy;Simran Education</small>
+      </div>
+    </footer>
+
+    <!---end of footer section-->
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+  </body>
+</html>
